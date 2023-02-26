@@ -11,7 +11,7 @@ def reformat_dates(old_dates):
     dts=[]
     for d in old_dates:
         
-        res = datetime.datetime.strptime(d, "%Y-%m-%d").strftime('%d %b %Y')
+        res = datetime.strptime(d, "%Y-%m-%d").strftime('%d %b %Y')
         dts.append(res)
         
     return dts
